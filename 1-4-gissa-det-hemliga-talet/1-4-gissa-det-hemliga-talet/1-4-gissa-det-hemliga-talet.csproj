@@ -62,12 +62,14 @@
   <ItemGroup>
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\MyScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

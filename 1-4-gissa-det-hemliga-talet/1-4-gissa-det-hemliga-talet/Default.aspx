@@ -30,7 +30,9 @@
         </asp:PlaceHolder>
         
         <asp:Button ID="newNumberButton" runat="server" Text="Nytt hemligt nummer" OnClick="newNumberButton_Click" Visible="False" CausesValidation="False" />
+
     </div>
     </form>
+    <script src="Scripts/MyScript.js"></script>
 </body>
 </html>

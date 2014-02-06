@@ -67,6 +67,8 @@ namespace _1_4_gissa_det_hemliga_talet
                     newNumberButton.Visible = true;
                     userGuessBox.Enabled = false;
                     GuessButton.Enabled = false;
+
+                    
                 }
 
                 if (resultOfGuess.ToString() == "PreviousGuess")
