@@ -31,9 +31,13 @@ namespace _1_4_gissa_det_hemliga_talet.Model
                 return null;
                 }
                 return _number;
-        } set; }
+        } set{} }
         public Outcome Outcome { get; private set; }
-        public IEnumerable<int> PreviousGuesses { get; set; }
+        public IEnumerable<int> PreviousGuesses { 
+            get{
+                return _previousGuesses.AsReadOnly();
+            } set{} 
+        }
 
         public SecretNumber()
         {
@@ -52,7 +56,7 @@ namespace _1_4_gissa_det_hemliga_talet.Model
         public Outcome MakeGuess(int guess) {
 
             // slut på gissningar
-            if(Count > 7){
+            if(Count == 7){
                 throw new ArgumentOutOfRangeException();
             }
 
@@ -84,6 +88,7 @@ namespace _1_4_gissa_det_hemliga_talet.Model
                 throw new ArgumentOutOfRangeException();
             }
 
+            _previousGuesses.Add(guess);
             Count = Count + 1;
             return Outcome;
         }

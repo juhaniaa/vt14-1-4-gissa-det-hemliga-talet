@@ -22,7 +22,10 @@
         <asp:Button ID="GuessButton" runat="server" Text="Gissa" OnClick="GuessButton_Click" />
 
         <%-- Här placeras de kontroller som inte skall vara synliga från start --%>
-        <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="false"></asp:PlaceHolder>
+        <asp:PlaceHolder ID="LabelPlaceHolder" runat="server" Visible="false">
+            <asp:Label ID="MadeGuessesLabel" runat="server" Text=""></asp:Label>
+            <asp:Label ID="LastGuessLabel" runat="server" Text=""></asp:Label>
+        </asp:PlaceHolder>
     </div>
     </form>
 </body>
