@@ -5,9 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gissa det hemliga talet</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" defaultbutton="GuessButton">
     <div>
         <h1>Gissa det hemliga talet</h1>
         <asp:Label ID="Label1" runat="server" Text="Ange ett tal mellan 1 och 100"></asp:Label>
@@ -25,7 +26,10 @@
         <asp:PlaceHolder ID="LabelPlaceHolder" runat="server" Visible="false">
             <asp:Label ID="MadeGuessesLabel" runat="server" Text=""></asp:Label>
             <asp:Label ID="LastGuessLabel" runat="server" Text=""></asp:Label>
+            <asp:Label ID="SecretNumberLabel" runat="server" Text=""></asp:Label>
         </asp:PlaceHolder>
+        
+        <asp:Button ID="newNumberButton" runat="server" Text="Nytt hemligt nummer" OnClick="newNumberButton_Click" Visible="False" CausesValidation="False" />
     </div>
     </form>
 </body>
